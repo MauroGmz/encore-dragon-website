@@ -6,11 +6,13 @@ import { PagesComponent } from './pages/pages.component';
 
 import { appRoutes } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagesComponent
+    PagesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

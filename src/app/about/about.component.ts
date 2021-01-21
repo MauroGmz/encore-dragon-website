@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,9 +7,9 @@ import { Title } from '@angular/platform-browser';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private title: Title) { }
+  constructor() { }
 
-  ngOnInit() {
-    this.title.setTitle('About - EncoreDragon');
+  ngOnInit(): void {
   }
+
 }

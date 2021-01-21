@@ -4,7 +4,7 @@ import { AboutComponent } from './about/about.component';
 
 export const pagesRoutes: Routes = [
 	{
-		path: 'home',
+		path: '',
 		component: HomeComponent,
 		pathMatch: 'full'
 		//canActivate: [AuthGuard]
@@ -16,12 +16,12 @@ export const pagesRoutes: Routes = [
     },
 	{
 		path: '',
-		redirectTo: '/home',
+		redirectTo: '/',
 		pathMatch: 'full'
 	},
 	{
 		path: '**',
-		redirectTo: '/home',
+		redirectTo: '/',
 		pathMatch: 'full'
 	}
 ];
